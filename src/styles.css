@@ -3,18 +3,22 @@
 
 .side-bar{
 width:30%;
-/* background-image: url("/assets/sidebar back.jpg"); */
 background-color: #191919;
 float: left;
 height:100vh;
 }
 .quotes-details{
 width:70%;
-/* background-image: url("/assets/quote back.jpg"); */
 background-color: #4c4c4c;
 float:right;
 height: 100vh;
 }
 .body-content{
+
+}
+#main-name {
+text-align:center;
+color: white;
+
 
 }

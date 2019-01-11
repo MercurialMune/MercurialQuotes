@@ -11,12 +11,13 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
   declarations: [
     AppComponent,
     QuotesComponent,
-    QuoteDetailsComponent'
-    AngularFontAwesomeMudule
+    QuoteDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
