@@ -1,13 +1,11 @@
-
 <p>Author: {{quote.author}}</p>
-<p> Submitted: {{quote.completeDate|dateCount}} days ago</p>
+<p>Submitted: {{quote.completeDate|dateCount}} days ago</p>
 <p>Submitted by: {{quote.submittedBy}}</p>
-<!-- <p>Up Votes: {{count}}</p>
-<p>Down Votes: {{sum}}</p> -->
-<div class="btn-toolbar">
+<p>Up Votes: {{count}}</p>
+<p>Down Votes: {{sum}}</p>
 
-  <!-- <button class="btn  btn-sm btn-primary"(click)="addUpvote()">Up Vote</button>
-  <button class="btn  btn-sm btn-warning" (click)="addDownvote()">Down Vote</button> -->
-  <button class="btn  btn-sm btn-danger" (click) = 'quoteBoring()'>Delete</button>
-</div>
-<!-- </div> -->
+  <div class=" btn-group">
+        <button class="btn  btn-sm btn-primary" (click)="addUpvote()">Up Vote</button>
+        <button class="btn  btn-sm btn-warning" (click)="addDownvote()">Down Vote</button>
+        <button class="btn  btn-sm btn-danger" (click)="quoteDelete(true)">Delete</button>    
+  </div>

@@ -11,18 +11,18 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
 
   @Output() isBoring= new EventEmitter<boolean>();
-  quoteBoring(boring:boolean){
+  quoteDelete(boring:boolean){
     this.isBoring.emit(boring);
   }
-  // sum:number = 0;
-  // count:number = 0;
-  //
-  // addUpvote(){
-  //   this.count = this.count+1;
-  // }
-  // addDownvote(){
-  //   this.sum = this.sum+1;
-  // }
+  sum:number = 0;
+  count:number = 0;
+
+  addUpvote(){
+    this.count = this.count+1;
+  }
+  addDownvote(){
+    this.sum = this.sum+1;
+  }
 
   constructor() { }
 

@@ -8,6 +8,6 @@
   <div class="Quotes" *ngFor="let quote of quotes; let i = index">
     <h3 appHighlight>"{{quote.name}}"</h3>
     <button class="btn  btn-sm btn-success" (click)='toogleDetails(i)'>Details</button>
-    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isBoring)='boringQuote($event,i)'></app-quote-details>
+    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isBoring)='deleteQuote($event,i)'></app-quote-details>
   </div>
 </div>

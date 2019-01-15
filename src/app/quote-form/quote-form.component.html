@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-      
+    <form  (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.submittedBy" name="name" required>

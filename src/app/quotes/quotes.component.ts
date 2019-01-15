@@ -18,11 +18,13 @@ export class QuotesComponent implements OnInit {
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-  boringQuote(isBoring, index) {
+
+  deleteQuote(isBoring, index) {
     if (isBoring) {
       this.quotes.splice(index, 1);
     }
   }
+
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
@@ -34,7 +36,6 @@ export class QuotesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
+  
 }
