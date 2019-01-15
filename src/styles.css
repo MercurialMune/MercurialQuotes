@@ -16,3 +16,8 @@ body h1{
   border-color: #5cb85c;
   text-align: center;
 }
+.rows{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}

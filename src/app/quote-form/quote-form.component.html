@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="rows">
     <form  (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
       <div class="form-group">
@@ -18,7 +18,7 @@
       </div>
 
       <div class="form-group">
-        <label for="submitted-on">Submitted On :</label>
+        <label for="submitted-on">Submitted On</label><br>
         <input type='date' id="submitted-on" style="color:#A9A9A9" [(ngModel)]="newQuote.completeDate" name="submitted-on" required><br> <br>
       </div>
 
