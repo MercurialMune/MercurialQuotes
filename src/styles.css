@@ -1,24 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-
-.side-bar{
-width:30%;
-background-color: #191919;
-float: left;
-height:100vh;
+body{
+  background-color: #191919;
+  color: white;
 }
-.quotes-details{
-width:70%;
-background-color: #4c4c4c;
-float:right;
-height: 100vh;
+body h1{
+  text-align: center;
 }
-.body-content{
-
-}
-#main-name {
-text-align:center;
-color: white;
-
-
+.Quotes{
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #5cb85c;
+  text-align: center;
 }

@@ -1,4 +1,13 @@
-<div class="quotes-details">
-  <h1 id="main-name">Mercurial Quotes</h1>
 
+<p>Author: {{quote.author}}</p>
+<p> Submitted: {{quote.completeDate|dateCount}} days ago</p>
+<p>Submitted by: {{quote.submittedBy}}</p>
+<!-- <p>Up Votes: {{count}}</p>
+<p>Down Votes: {{sum}}</p> -->
+<div class="btn-toolbar">
+
+  <!-- <button class="btn  btn-sm btn-primary"(click)="addUpvote()">Up Vote</button>
+  <button class="btn  btn-sm btn-warning" (click)="addDownvote()">Down Vote</button> -->
+  <button class="btn  btn-sm btn-danger" (click) = 'quoteBoring()'>Delete</button>
 </div>
+<!-- </div> -->

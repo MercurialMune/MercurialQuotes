@@ -1,4 +1,13 @@
-<div class="side-bar">
-  <br><br><br><br>
-
+<div class="text-center">
+  <br>
+  <button type="button" class="btn  btn-sm btn-success">Add Quote</button>
+  <div class="row">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+  <br>
+  <div class="Quotes" *ngFor="let quote of quotes; let i = index">
+    <h3 appHighlight>"{{quote.name}}"</h3>
+    <button class="btn  btn-sm btn-success" (click)='toogleDetails(i)'>Details</button>
+    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isBoring)='boringQuote($event,i)'></app-quote-details>
+  </div>
 </div>
